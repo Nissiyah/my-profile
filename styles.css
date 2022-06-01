@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffff;
+  /* background-color: blanchedalmond; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.intro-icons {
+  width: 20px;
+  padding-right: 30px;
+  margin-top: 5%;
+  color: white;
+}
+.intro-divicons {
+  padding-left: 25%;
+}
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 10%;
+  height: 200px;
+}
+.rotate {
+  animation: rotation 8s infinite ease-in;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotation {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+h3 {
+  display: flex;
+  position: relative;
+  color: #110523;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: 10em;
+  padding-top: 20px;
+  padding-left: 15px;
+  letter-spacing: 8px;
+  line-height: 50px;
+}
+.bio {
+  color: black;
+  text-shadow: 2px 2px #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10%;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+#change-color {
+  color: #ffbf00 !important;
+}
+.wavy {
+  color: #ffbf00;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 10em;
+  padding-left: 15px;
+  letter-spacing: 5px;
+}
+.wavy {
+  animation: 1s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+.header-four {
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+.about-header {
+  padding-left: 37%;
+  color: rgb(73, 73, 68);
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+}
+.about-pic {
+  width: 100%;
+  height: 50%;
+}
+.about-section p {
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  line-height: 20px;
+}
+.skills-header {
+  padding-left: 37%;
+  color: rgb(73, 73, 68);
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+}
+.skills-icons {
+  width: 25%;
+}
+.skills-span {
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+.about-paragraph {
+  letter-spacing: 3px;
+  line-height: 3px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 8px;
+  background-color: #fff;
+  padding-left: 20%;
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: rgba(139, 139, 215, 0.44);
+  margin-top: auto;
+  padding-left: 30%;
+}
+
+.footer-icons {
+  width: 6%;
+  padding: 20px 15px 20px;
+}
+.copyright-icon {
+  width: 5%;
+}
+.copyright-span p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 5em;
+}
+.copyright-span {
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .intro-divicons {
+    padding-left: 35%;
+  }
+
+  .wavy {
+    color: #ffbf00;
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    font-weight: 10em;
+    padding-left: 20%;
+    letter-spacing: 5px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 35%;
+    margin-right: 20px;
+    margin-top: 10%;
+    height: 200px;
+  }
+
+  .about-section p {
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    line-height: 30px;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .about-pic {
+    width: 100%;
+    height: 30%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+    background-color: #fff;
+    padding-left: 20%;
+  }
+
+  .copyright-span p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 5em;
+    padding-bottom: 20px;
+  }
+  .about-header {
+    padding-top: 50px;
+  }
+
+  .bio {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .intro-divicons {
+    padding-left: 43%;
+  }
+
+  .wavy {
+    font-size: 3rem;
+    font-weight: 10em;
+    padding-left: 20%;
+    letter-spacing: 7px;
+  }
+
+  .profile-pic {
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 5%;
+    height: 250px;
+  }
+  h3 {
+    padding-top: 5px;
+    padding-left: 20%;
+  }
+
+  .about-section p {
+    width: 40%;
+    float: right;
+    display: block;
+    position: relative;
+    height: 10%;
+    right: -100px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10%;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .about-pic {
+    width: 750px;
+
+    /* float: left;
+    display: flex;
+    position: absolute;
+    height: 550px;
+    padding-bottom: 5%;
+     */
+    padding-top: 5%;
+    top: -350px;
+    position: relative;
+    left: -850px;
+    height: 380px;
+  }
+
+  .copyright-span p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 5em;
+    padding-bottom: 20px;
+  }
+  .about-header {
+    padding-top: 50px;
+    left: 10%;
+  }
+  .about-section {
+    display: flex;
+    background-color: rgb(251, 250, 248);
+    height: 490px;
+    margin-top: 20px;
+    /* align-content: center;
+    justify-content: center; */
+  }
+
+  .bio {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 50px;
+  }
+  .welcome {
+    font-weight: bolder;
+    font-size: 2em;
+    color: #ffbf00;
+  }
+  .skills-header {
+    padding-left: 45%;
+    padding-top: 5%;
+  }
+  .skills-icons {
+    width: 50%;
+  }
+  /* .skills-span {
+    margin-top: 10%;
+    margin-bottom: 30%;
+  } */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 4px;
+    background-color: #110523;
+    padding-left: 10%;
+    justify-content: center;
+    align-content: center;
+  }
+  .special {
+    display: none;
+  }
+  .footer-icons {
+    padding-left: 10%;
+    width: 40px;
+  }
+  .copyright-span p {
+    padding-left: 10%;
+  }
+  footer {
+    margin-top: 30%;
+  }
+}
